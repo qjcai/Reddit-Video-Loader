@@ -1,6 +1,6 @@
 # Reddit-Video-Loader
-Required Lib:
-pip install praw
-pip install moviepy
-pip install tqdm
+Required Lib:<br>
+pip install praw<br>
+pip install moviepy<br>
+pip install tqdm<br>
 pip install requests
