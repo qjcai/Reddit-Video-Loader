@@ -1,7 +1,7 @@
 # Links
+https://www.reddit.com/prefs/apps <br>
 https://www.python.org/ <br>
-https://www.jetbrains.com/pycharm/download/#section=windows <br>
-https://www.reddit.com/prefs/apps
+https://www.jetbrains.com/pycharm/download/#section=windows
 
 # Reddit-Video-Loader
 Required Lib:<br>
