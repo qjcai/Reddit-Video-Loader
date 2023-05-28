@@ -46,7 +46,7 @@ def search_and_download():
     subreddit_names = s.subreddit
 
     max_videos = s.max_video_per_subreddit
-
+    time.sleep(5)
     for subreddit_name in subreddit_names:
         print('Searching in ' + subreddit_name)
         subreddit = reddit.subreddit(subreddit_name)
@@ -87,16 +87,13 @@ def search_and_download():
                             pass
                         final_clip = videoClip.set_audio(audioClip)
                         try:
-                            print('where')
                             final_clip.write_videofile(s.video_save_dir + '/' + cleaned_video_title + '_withaudio.mp4',
                                                        codec='libx264', audio_codec='aac')
                             print('video saved at ' + s.video_save_dir + ' ' + cleaned_video_title)
                         except(IndexError, OSError, FileNotFoundError):
-                            print('here')
                             os.remove(s.video_save_dir + cleaned_video_title + '_audio.mp4')
                             pass
                         try:
-                            print('hereeeeeeee' + filepath)
                             os.remove(filepath)
                             os.remove(fileaudiopath)
                         except (PermissionError, FileNotFoundError):
