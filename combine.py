@@ -41,7 +41,7 @@ def combineAll():
 
     merged_video_name = ('Final-' + str(datetime.date.today()))
 
-    final_clip.write_videofile(s.final_video_save_dir + f"{merged_video_name}.mp4")
+    final_clip.write_videofile(s.final_video_save_dir + '/' + f"{merged_video_name}.mp4")
     final_clip.close()
     final_clip.close()
     final_clip.close()
